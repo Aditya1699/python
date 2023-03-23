@@ -1,0 +1,28 @@
+
+# Writing data to a file
+with open('example.txt', 'w') as f:
+    f.write('Hello, World!\n')
+    f.write('This is an example file.\n')
+    f.write('We will use this file to demonstrate various ways to read and write data.\n')
+
+# Reading data from a file using read()
+with open('example.txt', 'r') as f:
+    data = f.read()
+    print(data)
+
+# Reading data from a file line by line using readline()
+with open('example.txt', 'r') as f:
+    line = f.readline()
+    while line:
+        print(line.strip())
+        line = f.readline()
+
+# Reading data from a file using readlines()
+with open('example.txt', 'r') as f:
+    lines = f.readlines()
+    for line in lines:
+        print(line.strip())
+
+# Appending data to a file
+with open('example.txt', 'a') as f:
+    f.write('This is a new line added using append mode.\n')
