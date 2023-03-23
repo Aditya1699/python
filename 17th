@@ -1,0 +1,13 @@
+from functools import reduce
+
+# Define a list of two numbers to add
+numbers = [5, 7]
+
+# Define a function to add two numbers
+def add(x, y):
+    return x + y
+
+# Use reduce to add the two numbers
+result = reduce(add, numbers)
+
+print(result)
