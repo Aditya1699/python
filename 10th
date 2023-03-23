@@ -1,0 +1,8 @@
+# Define a lambda function to add two numbers
+add = lambda x, y: x + y
+
+# Call the lambda function with two arguments
+result = add(3, 5)
+
+# Print the result
+print(result)
