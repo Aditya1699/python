@@ -1,0 +1,13 @@
+# Define a function to swap two variables
+def swap(x, y):
+    print("Before swapping: x =", x, "y =", y)
+    x, y = y, x
+    print("After swapping: x =", x, "y =", y)
+
+# Call the swap function with two variables
+a = 3
+b = 5
+swap(a, b)
+
+# Print the values of the variables outside the function
+print("Outside function: a =", a, "b =", b)
