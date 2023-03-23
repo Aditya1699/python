@@ -1,0 +1,14 @@
+def accumulator(sequence):
+    """
+    This function takes a sequence of numbers as input and returns a running
+    total of those numbers as a list.
+    """
+    total = 0
+    result = []
+    for number in sequence:
+        total += number
+        result.append(total)
+    return result
+my_sequence = [1, 2, 3, 4, 5]
+result = accumulator(my_sequence)
+print(result)
