@@ -1,0 +1,21 @@
+# Take user input for the first list
+list1 = list(map(int, input("Enter elements of first list separated by space: ").split()))
+
+# Take user input for the second list
+list2 = list(map(int, input("Enter elements of second list separated by space: ").split()))
+
+# Check if the lengths of the two lists are the same
+if len(list1) != len(list2):
+    print("The lists are not the same")
+else:
+    # Sort the two lists
+    list1.sort()
+    list2.sort()
+
+    # Compare the two lists element by element
+    for i in range(len(list1)):
+        if list1[i] != list2[i]:
+            print("The lists are not the same")
+            break
+    else:
+        print("The lists are the same")
