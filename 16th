@@ -1,0 +1,19 @@
+import math
+
+# Find the square root of a number
+num = 16
+sqrt_num = math.sqrt(num)
+
+print("The square root of", num, "is", sqrt_num)
+
+# Find the factorial of a number
+num2 = 5
+factorial_num2 = math.factorial(num2)
+
+print("The factorial of", num2, "is", factorial_num2)
+
+# Find the cosine of an angle in radians
+angle = math.pi / 4
+cosine_angle = math.cos(angle)
+
+print("The cosine of", angle, "radians is", cosine_angle)
