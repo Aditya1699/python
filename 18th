@@ -1,0 +1,14 @@
+def cumulative_sum(lst):
+    """
+    This function takes a list as input and returns a new list
+    containing the cumulative sum of the elements in the input list.
+    """
+    cum_sum = 0
+    new_lst = []
+    for num in lst:
+        cum_sum += num
+        new_lst.append(cum_sum)
+    return new_lst
+my_list = [1, 2, 3, 4, 5]
+result = cumulative_sum(my_list)
+print(result)
